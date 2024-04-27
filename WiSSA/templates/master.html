@@ -46,7 +46,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="{% url 'index-url' %}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>WiSSAfrica</h1>
@@ -54,29 +54,30 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="{% url 'index-url' %}">Home</a></li>
+          <li><a href="{% url 'about-url' %}">About</a></li>
+          <li class="dropdown"><a href="category.html"><span>Programs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="search-result.html">Eventsp</a></li>
+              <li><a href="#">Get Involved</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Get Involved</a></li>
+                  <li><a href="#">Volunteer</a></li>
+                  <li><a href="#">Evens</a></li>
+                  <li><a href="#">Members</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Members</a></li>
             </ul>
           </li>
 
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">Support Us</a></li>
+          <li><a href="{% url 'news-url' %}">News</a></li>
+          <li><a href="{% url 'contact-url' %}">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
